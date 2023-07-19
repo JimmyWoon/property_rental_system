@@ -1,0 +1,444 @@
+
+ /* -------------------------------------------All----------------------------- */
+
+ .upload-property {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+ }
+
+ .upload-property button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 2rem;
+    border-radius: 6px;
+    background: linear-gradient(180deg, var(--first-color), var(--second-color));
+    color: #fff;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    box-shadow: 0 6px 24px hsla(244, 75%, 48%, 0.5);
+    margin-bottom: 1rem;
+    cursor: pointer;
+ }
+
+ .upload-property button i {
+    font-size: 20px;
+ }
+
+ .buttonText {
+    color: #fff;
+ }
+
+ .buttonText:before {
+    content: 'Upload Property';
+}
+
+ /* -------------------------------------------NavBar----------------------------- */
+
+ .search-bar {
+    margin-top: 50px;
+    width: 100%;
+    background: rgb(241, 241, 241);
+    padding: 6px 10px 6px 10px;
+    border-radius: 50px;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.search-bar form input {
+    font-size: 14px;
+    padding: 15px 25px;
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+    flex: 1;
+}
+
+.search-bar form button {
+    background: var(--first-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+
+.side-button ul {
+    list-style: none;
+}
+
+.side-button ul li {
+    position: relative;
+    float: left;
+}
+
+.side-button ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.side-button ul li:focus-within > ul, .side-button ul li:hover > ul {
+    display: initial;
+}
+
+.side-button ul li a {
+    font-size: 16px;
+    padding: 15px;
+    color: #333;
+    display: block;
+}
+
+.side-button ul li a:link {
+    text-decoration: none;
+}
+
+.side-button ul li a:hover {
+    background: #333;
+    color: #fff;
+}
+
+.side-button ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    display: none;
+}
+
+
+/* ----------------------------------------listing page ----------------------------------- */
+
+.list-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.no-col{
+    display: none;
+    visibility: hidden;
+}
+
+.right-col{
+    flex-basis: 70%;
+}
+
+.left-col{
+    flex-basis: 25%;
+}
+
+.left-col h1{
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.house{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+}
+
+.house-img{
+    flex-basis: 40%;
+}
+
+.house-info{
+    flex-basis: 58%;
+    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.house-img img{
+    object-fit: cover;
+    max-height: 200px;
+    width: auto;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.house-info a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.house-info a:hover {
+    text-decoration: underline;
+}
+
+.house-info a:visited {
+    color: black;
+}
+
+.house-info h3{
+    font-weight: 600;
+    color: #333;
+    font-size: 22px;
+    margin: 4px 0;
+}
+
+.house-info .rate {
+    display: flex;
+    align-items: baseline;
+}
+
+.house-info i {
+    color: var(--first-color);
+    font-size: 18px;
+    margin: 10px 1px;
+}
+
+#desc {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.tools {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tools button {
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 15%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+
+.tools button:hover {
+    background-color: #ccc;
+}
+
+.house-price, .tools {
+    text-align: right;
+}
+
+.house-price h4{
+    font-size: 20px;
+}
+
+.house-price span{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#prop-stat-green {
+    color: rgb(36, 223, 36);
+}
+
+#prop-stat-orange {
+    color: orange;
+}
+
+#prop-stat-red {
+    color: red;
+}
+
+.button:hover {
+    background: linear-gradient(180deg, var(--second-color), var(--first-color-light));
+}
+
+span {
+    color: var(--first-color);
+}
+
+/* ----------------------------------------filter ----------------------------------- */
+
+.sidebar {
+    border: 1px solid #999;
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+
+.sidebar h2 {
+    font-weight: 500;
+}
+
+.sidebar h3 {
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.filter select {
+    width: 100%;
+    padding: 10px;
+}
+
+.filter p {
+    flex: 1;
+}
+
+.filter input {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.sidebar-link {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sidebar-link button {
+    width: 100%;
+    padding: 14px 2rem;
+    border-radius: 6px;
+    background: linear-gradient(180deg, var(--first-color), var(--second-color));
+    color: #fff;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    box-shadow: 0 6px 24px hsla(244, 75%, 48%, 0.5);
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+/* -----------------------------------------pagination------------------------- */
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    gap: 20px;
+}
+
+.pagination i {
+    width: 15px;
+    margin: 10px 20px;
+}
+
+.pagination button {
+    padding: 2px;
+    border-radius: 6px;
+    background: linear-gradient(180deg, var(--first-color), var(--second-color));
+    color: #fff;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    box-shadow: 0 6px 24px hsla(244, 75%, 48%, 0.5);
+    margin-bottom: 1rem;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.pagination button:hover {
+    background: linear-gradient(180deg, var(--second-color), var(--first-color-light));
+}
+
+/* -----------------------------------------for small screen devices------------------------- */
+
+@media only screen and (max-width:800px){
+
+    .buttonText:before {
+        content: '';
+    }
+
+    .upload-property button i {
+        font-size: 24px;
+     }
+
+    .upload-property button {
+        gap: 0px;
+        padding: 1.2rem;
+        border-radius: 50%;
+     }
+
+    .search-bar {
+        margin-top: 120px;
+        width: 100%;
+    }
+    /* .search-bar form input {
+        flex: 1;
+    }
+    .search-bar form {
+        display: flex;
+        justify-content: space-between;
+    } */
+    .register-btn{
+        display:  inline-block;
+    }
+    .hidemenu{
+        max-height: 400px;
+    }
+
+    .side-button ul li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .side-button ul #outerli {
+        margin-bottom: 15px;
+    }
+
+    .side-button ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    .side-button ul li ul li {
+        background: #eee;
+    }
+
+    .list-container {
+        margin-top: 10px;
+    }
+
+    .right-col {
+        margin-top: 30px;
+    }
+
+    .left-col, .right-col, .house-img, .house-info {
+        flex-basis: 100%;
+    }
+
+    .right-col h1 {
+        font-size: 22px;
+    }
+
+    .house-info h3 {
+        font-size: 18px;
+    }
+
+    .house-info i {
+        font-size: 16px;
+    }
+
+    .page span {
+        margin: 10px 2px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width:330px){
+
+    .search-bar form input {
+        padding: 0px;
+    }
+}

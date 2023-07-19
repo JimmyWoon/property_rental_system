@@ -1,0 +1,364 @@
+
+/* ----------------------------------------listing page ----------------------------------- */
+/* .navbar-white{
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.navbar-white .nav-links li a{
+    text-decoration: none;
+    color: black;
+}
+.navbar-white .register-btn{
+    background: #ff5361;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+} */
+/*Main Panel in Edit Property */
+/* .list-container{ 
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-col{
+    flex-basis: 70%;
+}
+.right-col{
+    flex-basis: 25%;
+}
+
+.left-col h1{
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.house{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+}
+
+.house-img{
+    flex-basis: 40%;
+}
+.house-info{
+    flex-basis: 58%;
+    color: #555;
+}
+.house-img img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.house-info h3{
+    font-weight: 600;
+    color: #333;
+    font-size: 22px;
+    margin: 4px 0;
+}
+
+.house-info i{
+    color:#ff5361;
+    font-size: 18px;
+    margin: 10px 1px;
+}
+
+.house-price{
+    text-align: right;
+}
+
+.house-price h4{
+    font-size: 20px;
+}
+
+.house-price span{
+    font-size: 16px;
+    font-weight: 500;
+} */
+/*---------------------------------Edit Property------------------------*/
+.left{
+    flex-basis: 20%;
+}
+
+.right{
+    flex-basis: 20%;
+}
+
+.center{
+    flex-basis: 60%;
+
+}
+.MainPanel{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    /* justify-content: space-between; */
+}
+
+.submit{
+    padding: 14px 2rem;
+    border-radius: 6px;
+    background: linear-gradient(180deg, var(--first-color), var(--second-color));
+    color: #fff;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    box-shadow: 0 6px 24px hsla(244, 75%, 48%, 0.5);
+    cursor: pointer;
+    margin-bottom: 1rem;
+
+    margin-right: 1em;
+
+}
+.submit:hover{
+    transform: scale(1.25);
+}
+.cancel{
+    padding: 14px 2rem;
+    border-radius: 6px;
+    background: linear-gradient(180deg, var(--text-color), var(--text-color));
+    color: #fff;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    box-shadow: 0 6px 24px grey;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    margin-right: 1em;
+}
+.cancel:hover{
+    transform: scale(1.25);
+}
+.top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+#form{
+    width: 100%;
+}
+
+.ImagePanel {
+    background-color: var(--first-color);
+    width: 100%;
+    /* min-width: 450px; */
+    position: relative;
+    margin: 50px auto;
+    padding: 50px 20px;
+    border-radius: 7px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.05);
+}
+input[type="file"]{
+    display: none;
+}
+
+#choosePht{
+    display: block;
+    position: relative;
+    background-color: var(--first-color-light);
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    width: 50%;
+    padding: 18px 0;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform .2s; /* Animation */
+}
+
+#choosePht:hover{
+    transform: scale(1.25);
+}
+
+.ImagePanel p{
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+
+#images{
+    width: 90%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+
+.figureUploaded{
+    width: 45%;
+}
+.imgUploaded{
+    max-width: 500px;
+    width: 100%;
+    /* min-width: 100px; */
+}
+.figcaptionUploaded{
+    text-align: center;
+    font-size: 1em;
+    margin-top: 0.5vmin;
+    color: white;
+}
+
+/* -----------------------------------------for small screen devices------------------------- */
+@media only screen and (max-width:950px){
+    
+    #choosePht{
+        font-size: 10px;
+    }
+    .ImagePanel p{
+        font-size: 12px;
+    }
+    .top{
+        margin-top: 100px;
+    }
+    .left{
+        flex-basis: 5% !important;
+    }
+    .right{
+        flex-basis: 5% !important;
+    }
+    .center{
+        flex-basis: 90% !important;
+    }
+}
+
+
+/**-------------------TextBoxPanel--------------*/
+@import url("https://rsms.me/inter/inter.css");
+ :root {
+	 --color-light: white;
+	 --color-dark: #212121;
+     /* --color-dark: #3BB143; */
+
+	 --color-signal: var(--first-color);
+	 --color-background: var(--color-light);
+	 --color-text: var(--color-dark);
+	 --color-accent: var(--color-signal);
+	 --size-bezel: 0.5rem;
+	 --size-radius: 4px;
+	 line-height: 1.4;
+	 font-family: "Inter", sans-serif;
+	 font-size: calc(0.6rem + 0.4vw);
+	 color: var(--color-text);
+	 background: var(--color-background);
+	 font-weight: 300;
+	 /* padding: 0 calc(var(--size-bezel) * 3); */
+}
+
+ mark {
+	 background: var(--color-accent);
+	 color: var(--color-text);
+	 font-weight: bold;
+	 padding: 0 0.2em;
+}
+ .card {
+	 background: var(--color-background);	 
+     /* background: #3BB143; */
+	 padding: calc(4 * var(--size-bezel));
+	 margin-top: calc(4 * var(--size-bezel));
+	 border-radius: var(--size-radius);
+	 border: 1px solid var(--color-shadow, currentColor);
+     box-shadow: -6px 6px 20px grey;
+
+}
+ .card--inverted {
+	 --color-background: var(--color-dark);
+	 color: var(--color-light);
+	 --color-shadow: var(--color-accent);
+}
+ .card--accent {
+	 --color-background: var(--color-signal);
+	 --color-accent: var(--color-light);
+	 color: var(--color-dark);
+}
+ .card *:first-child {
+	 margin-top: 0;
+}
+ .l-design-widht {
+	 max-width: 40rem;
+	 padding: 1rem;
+}
+.TextPanel .input {
+	 position: relative;
+}
+ .input__label {
+	 position: absolute;
+	 left: 0;
+	 top: 0;
+	 margin: calc(var(--size-bezel) * 0.75 + 3px) calc(var(--size-bezel) * 0.5);
+	 /* background: pink; */
+	 white-space: nowrap;
+	 transform: translate(0, 0);
+	 transform-origin: 0 0;
+	 background: var(--color-background);
+	 transition: transform 120ms ease-in;
+	 font-weight: bold;
+	 line-height: 1.2;
+     color: lightgray;
+
+}
+.TextPanel .input__field {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: 1px solid currentColor;
+    padding: calc(var(--size-bezel) * 1.2) var(--size-bezel);
+    color: currentColor;
+    background: transparent;
+    border-radius: var(--size-radius);
+    font-size: 12px;
+}
+ .input__field:focus + .input__label, .input__field:not(:placeholder-shown) + .input__label {
+	 transform: translate(0.25rem, -65%) scale(0.8);
+	 color: var(--color-accent);
+}
+ 
+.hidden {
+	 display: none;
+}
+.textBoxH2{
+    font-weight: 900;
+    margin-bottom: 1em;
+}
+.gap{
+    margin-bottom: 1em;
+}
+.card select{
+    font-weight: bold;
+}
+
+.card input{
+    font-weight: bold;
+}
+.card label{
+    font-weight: bold;
+}
+
+/**-------------------TextBoxPanel--------------*/
+
+/*------------------------------------error-*/
+.error {
+    background-color: red;
+    padding: 1rem;
+    margin-bottom: 1rem;    
+    margin-top: 1rem;
+    border-radius: 5px;
+
+}
+
+.error p{
+    color: white;
+}
+
